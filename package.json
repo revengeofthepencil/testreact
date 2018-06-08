@@ -9,8 +9,25 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build_bak": "react-scripts build",
+    "build": "cross-env NODE_ENV=production  webpack -p",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-react-app": "^3.1.1",
+    "cross-env": "^5.1.6",
+    "svg-loader": "0.0.2",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3",
+    "webpack-command": "^0.2.1",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
