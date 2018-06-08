@@ -12,20 +12,28 @@
     "start": "react-scripts start",
     "build_bak": "react-scripts build",
     "build": "cross-env NODE_ENV=production  webpack -p",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest --watch",
     "eject": "react-scripts eject"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "index.js",
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.4",
     "babel-preset-react-app": "^3.1.1",
     "cross-env": "^5.1.6",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^23.1.0",
+    "react-test-renderer": "^16.4.0",
     "svg-loader": "0.0.2",
     "webpack-cli": "^3.0.3",
     "webpack-command": "^0.2.1",
     "webpack-dev-server": "^3.1.4"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/src/test-setup.js"
   },
   "keywords": [],
   "author": "",

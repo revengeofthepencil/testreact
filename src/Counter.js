@@ -2,8 +2,8 @@ import React from 'react';
 
 function Counter({ count }) {
     return (
-        <p className="mb2">
-            Word count: {count}
+        <p className="mb2"><div>
+            Word count: {count}</div>
         </p>
     );
 }
