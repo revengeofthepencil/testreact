@@ -1,31 +1,9 @@
 import React from 'react';
+import AlertBox from './AlertBox'
+import SaveButton from './SaveButton'
 
+import { SUCCESS, FAILURE, WAITING, IDLE } from './saveStatus';
 
-const SUCCESS = 'SUCCESS';
-const FAILURE = 'FAILURE';
-const WAITING = 'WAITING';
-const IDLE = 'IDLE';
-
-function SaveButton({ onClick }) {
-    return (
-        <button className="pv2 ph3" onClick={onClick}>
-            Save
-        </button>
-    );
-}
-
-
-function AlertBox({ status }) {
-    if (status === FAILURE) {
-        return <div className="mv2">Save failed</div>;
-    } else if (status === SUCCESS) {
-        return <div className="mv2">Save successful</div>;
-    } else if (status === WAITING) {
-        return <div className="mv2">Saving…</div>;
-    } else {
-        return null;
-    }
-}
 
 
 

@@ -32,10 +32,6 @@ function makeFakeRequest() {
 }
 
 
-
-
-
-//class WordCounter extends React.Component {
 export default class WordCounter extends React.Component {
     constructor() {
         super();
