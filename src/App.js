@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import WordCounter from './wordcounter';
+import WordCounter from './WordCounter';
 
 
 class App extends Component {
